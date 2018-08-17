@@ -1,8 +1,8 @@
 import { FETCH_WEATHER } from '../actions/index';
 
 export default function(state = [], action) {
-    if(action.payload){
-        console.log('Action received1st',action.payload.data);
+    if(action.error){
+        return state;
     }
     switch (action.type) {
         case FETCH_WEATHER:

@@ -8,7 +8,7 @@ class SearchBar extends Component {
         super(props);
 
         this.state = { term: '' };
-
+        
     }
     //refactored callbacks to be added as class properties, avoid bind
     onInputChange = (event) => {
